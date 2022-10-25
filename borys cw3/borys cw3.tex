@@ -1,0 +1,150 @@
+\documentclass[12pt, letterpaper, titlepage]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\title{ZD1 i ZD2}
+\author{Borys Kutsenko}
+\date{Październik 2022}
+\begin{document}
+\maketitle
+\begin{table}[h]
+\centering\caption{Przykladowy system decyzyjny(U,A,d), modelujacy probl diagnozy medycznej, ktorej efekt jst decyzija o wykonaniu/nie wykonaniu operacji. U=\{u1,u2,...,u10\}, A=\{a1,a2\} d e D=\{TAK,NIE\}}
+\begin{tabular}{l|l l l}
+\hline
+Pacjent & Bol brzucha & Temperatura ciala & Operacja\\
+\hline
+u1 & Mocny & Wysoka & TAK\\
+u2 & Sredni & Wysoka & TAK\\
+u3 & Mocny & Srednia & TAK\\
+u4 & Mocny & Niska & TAK\\
+u5 & Sredni & Srednia & TAK\\
+u6 & Sredni & Srednia & NIE\\
+u7 & Maly & Wysoka & NIE\\
+u8 & Maly & Niska & NIE\\
+u9 & Mocny & Niska & NIE\\
+u10 & Maly & Srednia & NIE\\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\begin{table}[h]
+\centering\caption{NOT}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 1 & 1\\
+\hline
+1 & 0 & 0\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{AND}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 0\\
+\hline
+0 & 1 & 0\\
+\hline
+1 & 0 & 0\\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{OR}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 0\\
+\hline
+0 & 1 & 1\\
+\hline
+1 & 0 & 1\\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{XOR}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 0\\
+\hline
+0 & 1 & 1\\
+\hline
+1 & 0 & 1\\
+\hline
+1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{NAND}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 1\\
+\hline
+0 & 1 & 1\\
+\hline
+1 & 0 & 1\\
+\hline
+1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{NOR}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 1\\
+\hline
+0 & 1 & 0\\
+\hline
+1 & 0 & 0\\
+\hline
+1 & 1 & 0\\
+\hline
+\end{tabular}
+\end{table}
+\begin{table}[h]
+\centering\caption{XNOR}
+\begin{tabular}{|l|l|l|}
+\hline
+A & B & Output\\
+\hline
+0 & 0 & 1\\
+\hline
+0 & 1 & 0\\
+\hline
+1 & 0 & 0\\
+\hline
+1 & 1 & 1\\
+\hline
+\end{tabular}
+\end{table}
+
+
+
+
+\end{document}
